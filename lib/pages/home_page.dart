@@ -2,6 +2,8 @@ import 'package:books/components/view_book_button.dart';
 import 'package:books/pages/view_page.dart';
 import 'package:flutter/material.dart';
 
+import 'drawer/navigation_drawer_screen.dart';
+
 class Homepage extends StatefulWidget {
   const Homepage({Key? key}) : super(key: key);
 
@@ -16,6 +18,7 @@ class _HomepageState extends State<Homepage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: const NavigationDrawer(),
       backgroundColor: Colors.grey[300],
     appBar: AppBar(
       leading: const Icon(

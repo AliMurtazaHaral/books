@@ -128,7 +128,7 @@ class _SignUpPageState extends State<SignUpPage> {
                   const Text("Already have an account? "),
                   GestureDetector(
                       onTap: () {
-                        Navigator.of(context).push( MaterialPageRoute( builder:(context) => const UserPage()));
+                        Navigator.of(context).push( MaterialPageRoute( builder:(context) => const LoginPage()));
                       },
                       child: const Text("Login", style: TextStyle(color: Colors.blue, fontWeight: FontWeight.bold),))
                 ],),
